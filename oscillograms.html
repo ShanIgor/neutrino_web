@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Neutrino Oscillations</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'/>
+    <!-- Pirobox setup and styles -->
+    <script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="lib/pirobox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $().piroBox({
+      my_speed: 400, //animation speed
+      bg_alpha: 0.1, //background opacity
+      slideShow: false, // true == slideshow on, false == slideshow off
+      slideSpeed: 4, //slideshow duration in seconds(3 to 6 Recommended)
+      close_all: '.piro_close,.piro_overlay' // add class .piro_overlay(with comma)if you want overlay click close piroBox
+      });
+      });
+    </script>
+    <link href="images/style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+      <!-- Pirobox setup and styles end-->
+    </head>
+    <div>
+      <img src="images/bgnewmod.jpg" class="bgstyle"/>
+    </div>
+    <body>
+      <div id="update_notification">
+        <h3>page under construction</h3>
+        <p>Version of July 2 2013</p>
+      </div>
+      <div id="wrap">
+        <div id="height100">
+          <div id="authors">
+            <h1>Neutrino Oscillograms for the Earth</h1>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cross_sections.html"> Cross sections</a></li>
+            <li><a href="oscillograms.html" class="active">Oscillograms</a></li>
+            <li><a href="count_rates.html">Count rates</a></li>
+            <li><a href="qft_approach.html">QFT approach</a></li>
+          </ul>
+        </div>
+        <div id="content_bg_repeat">
+          <h1>MSW effect:</h1> The MSW (Mikheyev-Smirnov-Wolfenstein) effect is
+          the effect of the adiabatic transition of neutrino flavoures into one
+          another in a medium of slowly changing density (e.g. Earth, Sun).
+          In part, the effect becomes possible due to the fact that different
+          types of neutrino interact with matter in a different way.
+          <a href="#references">[Blennow-2013]</a>.
+          <div class="clear"></div>
+        </div>
+        <div id="content_bg_repeat">
+          <h1>Earth model:</h1>
+          <div id="quote">
+	    <blockquote>
+	      "Almost everything known or inferred about the inner core, from seismology or indirect inference, is controversial."
+	    </blockquote>
+	    <p style="font-weight:normal; font-style: normal; margin-top:5px;">Don L. Anderson, <em>"The inner inner core of Earth"</em></p>
+	    <p style="font-weight:normal; font-style: normal; margin-top:-5px;">
+	      <a style="font-weight:normal; font-style: normal;"
+		 href="http://www.pnas.org/content/99/22/13966.full" target="_blank">Proc. Natl. Acad. Sci. USA <strong>Vol.99</strong>, No.22 (2002)
+	      </a>
+	    </p>
+	  </div>
+          <p>One of the significant steps on the way to solving the problem is
+            to calculate the probability of flavor oscillations in the Earth,
+            taking into account the coherent interaction of (anti)neutrino with
+            a dense medium. The study of neutrino oscillations in the Earth
+            requires precise knowledge of its internal structural characteristics
+	    such as chemical composition, density distribution as well as its
+            geometry, magnetic field distribution etc. All results that we have
+            at present have been obtained using the Preliminary Reference Earth
+            Model (PREM) by Dziewonski & Anderson
+            <a href="#references">[Dziewonski-1981]</a>, <a href="#references">[Anderson-2007]</a> which still
+	    remains the most widely used 1D model of seismic velocities
+            in the Earth. In accordance with the aforementioned model the Earth
+            appears to be spherically symetric and split into 10 layers of
+            different thickness, and the density within each of such layers is
+            approximated by a polynomial function &rho;(r) of no greater
+            than 3rd degree. Figure 1 gives a visual picture of radial density
+            destribution according to this model. As regards the chemical
+            composition of the Earth, for the moment it is included at the most
+	    basic level, namely, in the aproximation of isoscalar medium,
+            but will be properly complicated at a later date.</p>
+	  <div id="Earth_table">
+	    <a href="images/Earth.jpg" class="pirobox_gal1" title="PREM">
+              <img src="images/Earth-PREM+.gif" alt="" />
+            </a>
+          </div>
+          <center><strong>Fig.1</strong> Radial density distribution in Earth according to PREM <a href="#references">[Dziewonski-1981]</a>.</center>
+          <p style="margin-top:15px;">The oscillpgrams themselves display
+            behaviour of oscillation probabilities of atmospheric neutrinos as
+            functions of energy (GeV) and nadir angle (deg).
+            The mixing parameters and masses used for all current computations
+            were taken from the recent global analysis of neutrino oscillation
+            data carried out by G. L. Fogli, E. Lisi, A. Marrone, D. Montanino, A. Palazzo, and A. M. Rotunno
+            <a href="#references">[Fogli-2012]</a>.
+            The values of these parameters have been tabulated below:</p>
+          <center>
+            <table class="Ptable">
+              <caption> <b>Table 1: <a name="Table 1"></a></b> Neutrino mixing parameters</caption>
+              <tr>
+                <th>Parameter</th>
+                <th>Best Fit</th>
+                <th>1 &sigma; range</th>
+                <th>2 &sigma; range</th>
+                <th>3 &sigma; range</th>
+              </tr>
+              <tr>
+                <td>
+                  <center>&delta;m<sup>2</sup>/10<sup>-5</sup>eV<sup>2</sup> (NH/IH)</center>
+                </td>
+                <td>
+                  <center>7.54</center>
+                </td>
+                <td>7.32-7.80</td>
+                <td>
+                  <center>7.15-8.00</center>
+                </td>
+                <td>6.99-8.18</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>sin<sup>2</sup> &theta;<sub>12</sub>/10<sup>-1</sup>(NH/IH)</center>
+                </td>
+                <td>
+                  <center>3.07</center>
+                </td>
+                <td>2.91-3.25</td>
+                <td>
+                  <center>2.75-3.42</center>
+                </td>
+                <td>2.59-3.59</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>&Delta;m<sup>2</sup>/10<sup>-3</sup>eV<sup>2</sup>(NH)</center>
+                </td>
+                <td>
+                  <center>2.43</center>
+                </td>
+                <td>2.33-2.49</td>
+                <td>
+                  <center>2.27-2.55</center>
+                </td>
+                <td>2.19-2.62</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>&Delta;m<sup>2</sup>/10<sup>-3</sup>eV<sup>2</sup>(IH)</center>
+                </td>
+                <td>
+                  <center>2.42</center>
+                </td>
+                <td>2.31-2.49</td>
+                <td>
+                  <center>2.26-2.53</center>
+                </td>
+                <td>2.17-2.61</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>sin<sup>2</sup> &theta;<sub>13</sub>/10<sup>-2</sup>(NH)</center>
+                </td>
+                <td>
+                  <center>2.41</center>
+                </td>
+                <td>2.16-2.66</td>
+                <td>
+                  <center>1.93-2.90</center>
+                </td>
+                <td>1.69-3.13</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>sin<sup>2</sup> &theta;<sub>13</sub>/10<sup>-2</sup>(IH)</center>
+                </td>
+                <td>
+                  <center>2.44</center>
+                </td>
+                <td>2.19-2.67</td>
+                <td>
+                  <center>1.94-2.91</center>
+                </td>
+                <td>1.71-3.15</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>sin<sup>2</sup> &theta;<sub>23</sub>/10<sup>-1</sup>(NH)</center>
+                </td>
+                <td>
+                  <center>3.86</center>
+                </td>
+                <td>3.65-4.10</td>
+                <td>
+                  <center>3.48-4.48</center>
+                </td>
+                <td>3.31-6.37</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>sin<sup>2</sup> &theta;<sub>23</sub>/10<sup>-1</sup>(IH)</center>
+                </td>
+                <td>
+                  <center>3.92</center>
+                </td>
+                <td>3.70-4.31</td>
+                <td>3.54-4.84&oplus;5.43-6.41</td>
+                <td>3.35-6.63</td>
+              </tr>
+              <tr>
+                <td>
+                  <center>&delta;/&pi;(NH)</center>
+                </td>
+                <td>
+                  <center>1.08</center>
+                </td>
+                <td>0.77-1.36</td>
+                <td>
+                  <center>...</center>
+                </td>
+                <td>
+                  <center>...</center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>&delta;/&pi;(IH)</center>
+                </td>
+                <td>
+                  <center>1.09</center>
+                </td>
+                <td>0.83-1.47</td>
+                <td>
+                  <center>...</center>
+                </td>
+                <td>
+                  <center>...</center>
+                </td>
+              </tr>
+            </table>
+          </center>
+          <div class="clear"></div>
+        </div>
+        <div id="content_bg_repeat">
+
+          <h1>Method:</h1> <p>In order to compute values of neutrino oscillation
+            probabilities in the Earth it becomes necessary to find a solution
+            of differencial matrix equation (MSW equation) describing the
+            evolution of the neutrino system in a medium. There are a few
+            optimal methods to solve such problem, in our case we decided to
+            adopt one that was described in <a href="#references">[Naumov-2002]</a>
+            since it has a couple of distinctive features which make it very
+            convinient to implement. According to this method, each of the
+            layers with varying density must be split into a number of sublayers
+            of conditionally constant density. Hereby the process of neutrino
+            propagating, from the moment of its birth in the sourse to the
+            moment of entering the detector, may be considered as a process of
+            consecutive propagations through a number of N segments
+	    of relatively invariable density. Thus if Si is the evolution
+            operator and the solution of MSW equation for the system of three
+            mixed Dirac neutrinos with the fixed flavours
+            (&nu;<sub>e</sub>,&nu;<sub>&mu;</sub>,&nu;<sub>&tau;</sub>) passing
+            through the i-th segment of constant density then S=&prod;Si is the
+            evolution operator and the solution for the whole path from the
+            source to the detector (complete solution) and equals the product of
+            partial solutions Si for the segments of constant density.</p>
+
+	  <p>The convinience of such method follows from the fact that
+            independently of density distribution in a medium we have to find an
+            exact solution of the equation for constant density only.
+            Such solution has been obtained in <a href="#references">[Naumov-1992]</a>.
+            It is also worth noticing here that the number of sublayers in each
+            layer is, by virtue of different thickness of such layers, individual
+            and regulated by a convergence criterion for the method used.
+            The criterion itself states that there're numbers N<sub>i</sub>
+	    of segments that each i-th layer is split into such that further
+            increasing of these numbers doesn't change the values of
+            probabilities within the desired accuracy.
+	    In our case these numbers can be established numerically only.</p>
+          <div class="clear"></div>
+        </div>
+        <div id="content_bg_repeat">
+          <!--second section-->
+          <div class="gallery">
+            <div class="gallery_bot">
+              <h1>Oscillograms for the normal mass hierarchy</h1>
+              <div class="row">
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigNH/Pee_NH_Fogli.png" class="pirobox_gal1" title="Normal Hierarchy">
+                      <img src="images/thumbnails/Pee_NH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>e</sub>&harr;&nu;<sub>e</sub> survival probability</h3>
+                  HR version: <a href="Oscillograms/pdfNH/Pee_NH_Fogli.pdf" target="_blank">pdf</a> ~ 40 Mb | MR version: <a href="Oscillograms/jpgNH/Pee_NH_Fogli.jpg" target="_blank">jpg</a> ~ 2 Mb</div>
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigNH/Pme_NH_Fogli.png" class="pirobox_gal1" title="Normal Hierarchy">
+                      <img src="images/thumbnails/Pme_NH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>&mu;</sub>&rarr;&nu;<sub>e</sub> transition probability</h3>
+                  HR versions: <a href="Oscillograms/pdfNH/Pme_NH_Fogli.pdf" target="_blank">pdf</a> ~ 50 Mb | MR version: <a href="Oscillograms/jpgNH/Pme_NH_Fogli.jpg" target="_blank">jpg</a> ~ 2 Mb</div>
+              </div>
+              <div style="height:13px"></div>
+              <div class="row">
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigNH/Pmm_NH_Fogli.png" class="pirobox_gal1" title="Normal Hierarchy">
+                      <img src="images/thumbnails/Pmm_NH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>&mu;</sub>&harr;&nu;<sub>&mu;</sub> survival probability</h3>
+                  HR versions: <a href="Oscillograms/pdfNH/Pmm_NH_Fogli.pdf" target="_blank">pdf</a> ~ 100 Mb | MR version: <a href="Oscillograms/jpgNH/Pmm_NH_Fogli.jpg" target="_blank">jpg</a> ~ 4 Mb</div>
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigNH/Pmt_NH_Fogli.png" class="pirobox_gal1" title="Normal Hiearachy">
+                      <img src="images/thumbnails/Pmt_NH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>&mu;</sub>&rarr;&nu;<sub>&tau;</sub> transition probability </h3>
+                  HR versions: <a href="Oscillograms/pdfNH/Pmt_NH_Fogli.pdf" target="_blank">pdf</a> ~ 100 Mb | MR version: <a href="Oscillograms/jpgNH/Pmt_NH_Fogli.jpg" target="_blank">jpg</a> ~ 4 Mb</div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="content_bg_repeat">
+          <div class="gallery">
+            <div class="gallery_bot">
+              <h1>Oscillograms for the inverse mass hierarchy</h1>
+
+              <div class="row">
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigIH/Pee_IH_Fogli.png" class="pirobox_gal1" title="Inverse Hierarchy">
+                      <img src="images/thumbnails/Pee_IH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>e</sub>&harr;&nu;<sub>e</sub> survival probability</h3>
+                  HR versions: <a href="Oscillograms/pdfIH/Pee_IH_Fogli.pdf" target="_blank">pdf</a> ~ 40 Mb | MR version: <a href="Oscillograms/jpgIH/Pee_IH_Fogli.jpg" target="_blank">jpg</a> ~ 2Mb</div>
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigIH/Pme_IH_Fogli.png" class="pirobox_gal1" title="Inverse Hierachy">
+                      <img src="images/thumbnails/Pme_IH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>&mu;</sub>&rarr;&nu;<sub>e</sub> transition probability</h3>
+                  HR versions: <a href="Oscillograms/pdfIH/Pme_IH_Fogli.pdf" target="_blank">pdf</a> ~ 50 Mb | MR version: <a href="Oscillograms/jpgIH/Pme_IH_Fogli.jpg" target="_blank">jpg</a> ~ 2 Mb</div>
+              </div>
+              <div style="height:13px"></div>
+              <div class="row">
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigIH/Pmm_IH_Fogli.png" class="pirobox_gal1" title="Inverse Hierachy">
+                      <img src="images/thumbnails/Pmm_IH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>&mu;</sub>&harr;&nu;<sub>&mu;</sub> survival probability</h3>
+                  HR versions: <a href="Oscillograms/pdfIH/Pmm_IH_Fogli.pdf" target="_blank">pdf</a> ~ 110 Mb | MR version: <a href="Oscillograms/jpgIH/Pmm_IH_Fogli.jpg" target="_blank">jpg</a> ~ 4 Mb</div>
+                <div class="box_img2">
+                  <div class="g_size">
+                    <a href="Oscillograms/bigIH/Pmt_IH_Fogli.png" class="pirobox_gal1" title="Inverse Hierachy">
+                      <img src="images/thumbnails/Pmt_IH_Fogli_thmsf.png" alt="" />
+                    </a>
+                  </div>
+                  <h3>&nu;<sub>&mu;</sub>&rarr;&nu;<sub>&tau;</sub> transition probability</h3>
+                  HR versions: <a href="Oscillograms/pdfIH/Pmt_IH_Fogli.pdf" target="_blank">pdf</a> ~ 100 Mb | MR version: <a href="Oscillograms/jpgIH/Pmt_IH_Fogli.jpg" target="_blank">jpg</a> ~ 4 Mb</div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="content_bg_repeat">
+          <a name="references"></a>
+          <h1>References:</h1>
+          <table id="references">
+            <tr>
+              <td style="text-align:right; vertical-align:top;">[Altarelli-2012]</td>
+              <td width="600px;">G. Altarelli, F. Feruglio, L. Merlo, <i><b>Tri-Bimaximal Neutrino Mixing and Discrete Flavour Symmetries.</b></i>
+                <i>Submitted to Fortschritte der Physik.</i>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/1205.5133" target="_blank">arXiv:1205.5133v2</a> [hep-ph]</td>
+          </tr>
+          <tr>
+            <td style="text-align:right; vertical-align:top;">[Anderson-2007]</td>
+            <td>D.L.Anderson, <i><b>New theory of the Earth.</b></i> (CUP, 2007)
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:right; vertical-align:top;">[Blennow-2013]</td>
+            <td>M. Blennow, A.Yu. Smirnov, <i><b>Neutrino Propagation in Matter</b></i>
+	      <a href="http://www.hindawi.com/journals/ahep/2013/972485/" target="_blank">Adv.High Energy Phys. <b>2013</b> (2013) 972485.</a>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/arXiv:1306.2903" target="_blank"> arXiv:1306.2903v1</a> [hep-ph]
+	    </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Damanik-2013]</td>
+            <td>A. Damanik, <i><b>Nonzero &theta;<sub>13</sub>, CP Violation, and &mu;-&tau; Symmetry.</b></i>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/1305.6900v3" target="_blank">arXiv:1305.6900v3</a> [hep-ph]
+	    </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Dziewonski-1981]</td>
+            <td>A. M. Dziewonski and D. L. Anderson, <i><b>Preliminary reference Earth model</b></i>,
+              <a href="http://dx.doi.org/10.1016/0031-9201%2881%2990046-7" target="_blank">Phys. Earth Planet.
+		Inter. <b>25</b> (1981) 297-356</a>
+            </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Fogli-2012]</td>
+            <td>G. L. Fogli, E. Lisi, A. Marrone, D. Montanino, A. Palazzo and A. M. Rotunno,
+              <i><b>Global analysis of neutrino masses, mixings, and phases: Entering the era of leptonic CP violation searches</b></i>,
+              <a href="http://dx.doi.org/10.1103/PhysRevD.86.013012" target="_blank">Phys.Rev. D <b>86</b>  (2012)  013012</a>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/1205.5254v3" target="_blank">arXiv:1205.5254v3</a> [hep-ph]
+	    </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Forero-2012]</td>
+            <td>D. V. Forero, M. Tortola, and J. W. F. Valle, <i><b>Global status of neutrino oscillation parameters after Neutrino-2012</b></i>,
+              <a href="http://dx.doi.org/10.1103/PhysRevD.86.073012" target="_blank">Phys. Rev. D <b>87</b> (2012) 073102</a>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/1205.4018v4" target="_blank">arXiv:1205.4018v4</a> [hep-ph]
+	    </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Gonzalez-Garcia-2012]</td>
+            <td>M.C. Gonzalez-Garcia, M. Maltoni, J. Salvado, and T. Schwetz, <i><b>Global fit to three neutrino mixing: critical look at present precision</b></i>,
+              <a href="http://link.springer.com/article/10.1007%2FJHEP12%282012%29123" target="_blank">JHEP <b>12</b> (2012) 123</a>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/arXiv:1209.3023" target="_blank">arXiv:1209.3023</a> [hep-ph]
+	    </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Naumov-1992]</td>
+            <td>V. A. Naumov, <i><b>Three neutrino oscillations in matter, CP violation and topological phases</b></i>,
+	      <a href="http://www.worldscientific.com/doi/abs/10.1142/S0218271892000203" target="_blank">
+                Int. J. Mod. Phys. D <b>1</b> (1992) 379-399</a>
+            </td>
+          </tr>
+	  <tr>
+            <td style="text-align:right; vertical-align:top;">[Naumov-2002]</td>
+            <td>V. A. Naumov, <i><b>High-energy neutrino oscillations in absorbing matter</b></i>,
+	      <a href="http://www.worldscientific.com/doi/abs/10.1142/S0218271892000203" target="_blank"> Phys.Lett. B <b>529</b> (2002) 199-211</a>
+            </td>
+	    <td style="text-align:left; vertical-align:top;"><a href="http://arxiv.org/abs/hep-ph/0112249" target="_blank">arXiv:0112249</a> [hep-ph]
+	    </td>
+          </tr>
+        </table>
+        <div class="clear"></div>
+      </div>
+    </body>
+  </html>

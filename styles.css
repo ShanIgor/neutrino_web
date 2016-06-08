@@ -1,0 +1,430 @@
+/*
+     general declarations
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+}
+/*
+     images
+*/
+img{
+    padding: 0px;
+    border: none;
+}
+/*
+
+     the most basic/general description for links
+
+*/
+a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+/*
+       wrapper
+*/
+#wrap{
+    width: 1050px;
+    margin: 0 auto;
+}
+/*
+
+       for headlines
+
+*/
+h1{
+    font: 18px 'Voltaire', Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    padding: 0px 25px 10px 25px;
+}
+h5 {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+/*
+       main background
+*/
+.bgstyle{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5000;
+}
+/*
+       individual classes and ids
+*/
+.neutrino_symbol{
+    position:relative;
+    width:400px;
+    height:530px;
+    left:550px;
+    bottom:570px;
+}
+.clear{
+    clear: both;	
+}
+#height100{
+    height: 100px;
+}
+#height200{
+    height:200px;
+}
+/*
+       update notification
+*/
+#update_notification H3{
+    font-size:170%;
+    font-family: Times new roman, Arial, Helvetica, sans-serif;
+    color:red;
+    text-align: left;
+    font-weight: normal;
+    margin-left:10px;
+    margin-top: 10px;
+}
+#update_notification p{
+    font-size:small;
+    font-family: Times new roman, Arial, Helvetica, sans-serif;
+    color:red;
+    margin-left:35px;
+}
+/*
+       blue boxes
+*/
+#boxes{
+    width:1000px;
+    height:400px;
+    margin-top:-550px;
+}
+#box_lft{
+    background:url(images/blueboxmod.jpg);
+    width:450px;
+    height:310px;
+    float:left;
+    position:relative;
+    left:20px;
+    border:1px solid white;
+}
+#minibox_lft{
+    width:60px;
+    height:45px;
+    border:2px solid #2447B2;
+    margin-left:10px;
+    margin-top:14px;
+}
+#box_rgt{
+    background:url(images/blueboxmod.jpg);
+    width:450px;
+    height:310px;
+    float:left;
+    position:relative;
+    left:75px;
+    border:1px solid white;
+}
+#minibox_rgt{
+    width:60px;
+    height:45px;
+    padding:2px;
+    margin-left:10px;
+    margin-top:14px;
+}
+#minibox_rgt_mod{
+    width:45px;
+    height:45px;
+    padding:2px;
+    margin-left:18px;
+    margin-top:12px;
+}
+.box_ttl{
+    background:#3366CC;
+    padding:5px;
+    padding-left:20px; 
+    font-family:Hobo Std;
+    font-size:18px;
+    font-weight:normal;
+}
+.lb_text{
+    position:relative;
+    left:40px;
+    bottom:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+.rb_text{
+    position:relative;
+    left:40px;
+    bottom:19px;
+    font-size:12px;
+    font-weight:bold;
+}
+.rb_text_mod{
+    position:relative;
+    left:46px;
+    bottom:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+/*
+           authors
+*/
+#authors H1
+{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Voltaire', sans-serif;
+    padding-top:20px;
+}
+#authors H2
+{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Voltaire', sans-serif;
+}
+/*
+           preface for the project
+*/
+#preface
+{
+    height: 100px;
+    padding: 30px;
+    text-align: justify;
+    font-family:Times New Roman,sans-serif;
+    font-weight:bold;
+    font-size:14px;
+}
+#preface H3
+{
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Times New Roman', Serif;
+}
+/*
+           menu
+*/
+#menu{
+    width: 1050px;
+    height: 66px;
+    background: url(images/menu_bg.png);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#menu ul{
+    padding-left: 0px;
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
+    width: 771px;	
+}
+#menu ul li{
+    display: inline;	
+}
+#menu ul li a{
+    font: 24px 'Voltaire', Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 154px;
+    height: 66px;
+    line-height: 61px;
+}
+#menu ul li a:hover,  #menu ul li .active{
+    background: url(images/active.png) center;
+}
+/*
+       for the roundabout thing
+*/
+#prew_img
+{
+    width: 1000px;
+    margin-left: -30px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: -30px;
+    height: 300px;
+}
+
+.roundabout-holder {
+    list-style: none;
+    width: 50em;
+    height: 10em;
+    margin: 1em auto;
+}			
+.roundabout-moveable-item {
+    height: 300px;
+    width: 562px;
+    cursor: pointer;
+}   
+.roundabout-moveable-item img {
+    width: 100%;
+    height: 100%;
+}  
+.roundabout-in-focus { cursor: auto;}
+
+/*
+       content
+*/
+#content_bg_repeat{
+    background: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+}
+/*
+       Earth data
+*/
+#Earth_table{
+    text-align: center;
+}
+#Earth_table img{
+    padding-top: 15px;
+    width: 375px;
+    height:375px;
+}
+/*
+     quote
+*/
+#quote {
+    font-family:times;
+    font-style:italic;
+    font-weight:bold;
+    font-size: 13px;
+    color:white;
+    position: relative;
+    border-radius:20px;
+    width:340px;
+    height:50px;
+    text-align:right;
+    padding:10px 20px 30px 20px;
+    background:#303030;
+    margin:-10px 0px 20px 600px;
+}
+/*
+     table with mixing parameters
+*/
+.Ptable{
+    margin-top:15px;
+    background-color:green; 
+    border-collapse:collapse;
+}
+.Ptable th{
+    background-color:#BDB76B;
+    color:white;
+}
+.Ptable td, .Ptable th{
+    padding: 5px;
+    border:1px solid #BDB76B;
+}
+.RefTab{
+    border-collapse:collapse;
+}
+.RefTab td, .RefTab th{
+    padding: 5px;
+    border:1px;
+}
+/*
+      references
+*/
+#references{
+    border-collapse: separate;
+    border-spacing:10px;
+}
+/*
+useful resources
+*/
+.ls{
+    list-style: none;
+    padding-left: 0px;
+    target:blank;
+}
+.ls img{
+    width:100px;
+    height:55px;
+}
+.ls li{
+    margin-bottom: 4px;
+    display:inline;
+}
+.ls li a{
+    padding-left: 15px;
+    padding-bottom: 4px;	
+}
+.ls li a:hover{
+    color: #ff0000;
+}
+.ls_style{
+    background: url(images/spis_bot.gif) no-repeat 0px 6px;
+    display: block;
+    padding-left: 15px;
+    color: #ffffff;	
+}
+.foot_pad{
+    text-align: center;
+    padding-top: 10px;
+}
+/*
+       gallery
+*/
+.gallery{
+}
+.gallery_bot{
+    padding: 5px 5px 0px 5px;
+}
+.row {
+    padding: 0px 0px 0px 0px;
+    height: 284px;
+}
+.box_img2 {
+    width: 308px;
+    height: 274px;
+    background: url(images/box_img.gif) left top no-repeat;
+    padding: 10px 100px 0px 80px;
+    float:left;
+}
+.gallery h3 {
+    padding: 15px 0px 5px 0px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+    font-weight: normal;
+    font-family: 'Voltaire', sans-serif;
+}
+.gallery h1 {
+    padding: 5px 0px 15px 8px;
+    color: #ffffff;
+    font-size: 26px;
+    background: url(images/h1_gallery.jpg) left top no-repeat;
+}
+.g_size
+{
+    width: 308px;
+    height: 162px;
+}
+.g_size img
+{
+    border: 3px solid #B1FFAD
+}
